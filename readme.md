@@ -20,5 +20,5 @@ The purpose of the exercise is to see how comfortable you are with a Laravel bas
 
 ### I really want this job
 - Make a new console command to be run with `php artisan qanda:reset` that removes all previous progresses.
-- Write unit tests.
+- Write (a) unit test(s).
 
