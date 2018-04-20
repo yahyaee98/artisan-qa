@@ -4,9 +4,11 @@ We have done a bit of work for you. If you fork this project, and run `php artis
 
 - The initial interaction should allow you to choose between adding questions and answers and viewing previously entered answers.
 
+### Creating Questions
 - Upon choosing the option to add a question, the user will be prompted to give a question and the answer to that question.
 - Upon giving a question and answer, this must be stored in the database. Use migrations to create the DB tables.
 
+### Practising Questions
 - Upon choosing to view the questions, the user will be prompted to choose from the previously given questions which one he wants to practice.
 - Upon choosing to practice a question, the user must fill in the right answer for the question, which will be checked against the previously given answer.
 
