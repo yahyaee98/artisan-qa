@@ -13,6 +13,7 @@ The purpose of the exercise is to see how comfortable you are with a Laravel bas
 - Upon choosing to practice a question, the user must fill in the right answer for the question, which will be checked against the previously given answer.
 - Upon answering a question, the user is returned to the list of all questions, and sees his progress for each question.
 - Upon completing all questions, an overview of the users final progress is given.
+- We strongly prefer saving the users' progress in the DB.
 
 ### Extra
 - Every step must have an option to go back one step.
