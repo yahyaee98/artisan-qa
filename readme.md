@@ -4,7 +4,7 @@
 
 ## What does it look like?
 
-![an screenshot](https://github.com/yahyaee98/artisan-qa/blob/master/screenshot.jpg?raw=true)
+![an screenshot](https://github.com/yahyaee98/artisan-qa/blob/master/screenshot.png)
 
 ## Instructions
 
