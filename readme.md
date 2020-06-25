@@ -2,6 +2,10 @@
 [![Build Status](https://travis-ci.org/yahyaee98/artisan-qa.svg?branch=master)](https://travis-ci.org/yahyaee98/artisan-qa)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/yahyaee98/artisan-qa/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/yahyaee98/artisan-qa/?branch=master)
 
+## What does it look like?
+
+![an screenshot](https://github.com/yahyaee98/artisan-qa/blob/master/screenshot.jpg?raw=true)
+
 ## Instructions
 
 - 🚀 To run the implemented command, you can easily execute `make run`. It will install dependencies and run `php artisan qanda:interactive`. 
