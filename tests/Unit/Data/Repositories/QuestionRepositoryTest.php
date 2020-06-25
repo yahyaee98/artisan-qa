@@ -17,6 +17,12 @@ class QuestionRepositoryTest extends TestCase
                 ->shouldReceive('newQuery')->once()->andReturnSelf()
                 ->shouldReceive('with')->with(['practice'])->andReturnSelf()
                 ->shouldReceive('get')->once()->andReturn(new QuestionCollection());
+
+            // Workaround for solving the problem with clone.
+            // See: https://github.com/laravel/framework/blob/7.x/src/Illuminate/Database/Eloquent/Builder.php#L1472
+            $p = (new \ReflectionClass($mock))->getProperty('query');
+            $p->setAccessible(true);
+            $p->setValue($mock, new \stdClass());
         });
 
         $repository = new QuestionRepository($builderMock);
@@ -31,6 +37,12 @@ class QuestionRepositoryTest extends TestCase
                 ->shouldReceive('newQuery')->once()->andReturnSelf()
                 ->shouldReceive('with')->with(['practice'])->andReturnSelf()
                 ->shouldReceive('get')->once()->andReturn(new QuestionCollection());
+
+            // Workaround for solving the problem with clone.
+            // See: https://github.com/laravel/framework/blob/7.x/src/Illuminate/Database/Eloquent/Builder.php#L1472
+            $p = (new \ReflectionClass($mock))->getProperty('query');
+            $p->setAccessible(true);
+            $p->setValue($mock, new \stdClass());
         });
 
         $repository = new QuestionRepository($builderMock);

@@ -18,7 +18,7 @@ class QuestionRepository implements Contract
 
     public function getAll(): QuestionCollection
     {
-        return (clone $this->queryBuilder)
+        return with(clone $this->queryBuilder)
             ->newQuery()
             ->with(['practice'])
             ->get();
@@ -26,7 +26,7 @@ class QuestionRepository implements Contract
 
     public function getById(int $id): ?Question
     {
-        return (clone $this->queryBuilder)
+        return with(clone $this->queryBuilder)
             ->newQuery()
             ->with(['practice'])
             ->find($id);
